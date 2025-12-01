@@ -1,48 +1,62 @@
-# admin-portfolio
+# 🎛️ Portfolio Admin Panel
 
-<div align="center" style="margin: 30px;">
-    <a href="https://refine.dev">
-    <img alt="refine logo" src="https://refine.ams3.cdn.digitaloceanspaces.com/readme/refine-readme-banner.png">
-    </a>
-</div>
-<br/>
+A content management system (CMS) designed to manage data for my personal portfolio website. Built with **Refine** for rapid internal tool development.
 
-This [Refine](https://github.com/refinedev/refine) project was generated with [create refine-app](https://github.com/refinedev/refine/tree/master/packages/create-refine-app).
+![Admin Panel Preview](https://via.placeholder.com/1200x600?text=Admin+Panel+Preview)
 
-## Getting Started
+## 🎯 Purpose
 
-A React Framework for building internal tools, admin panels, dashboards & B2B apps with unmatched flexibility ✨
+This admin panel allows me to Create, Read, Update, and Delete (CRUD) content for my portfolio without touching the codebase or database directly.
 
-Refine's hooks and components simplifies the development process and eliminates the repetitive tasks by providing industry-standard solutions for crucial aspects of a project, including authentication, access control, routing, networking, state management, and i18n.
+## ✨ Features
 
-## Available Scripts
+* **🔐 Authentication:** Secure login via Supabase Auth.
+* **🖼️ Image Upload:** Drag-and-drop upload directly to Supabase Storage (Buckets).
+* **📝 Data Management:** Manage Projects, Experiences, Skills, Educations, and Achievements.
+* **💅 UI Framework:** Clean interface using Ant Design.
 
-### Running the development server.
+## 🛠️ Tech Stack
 
-```bash
+* **Framework:** [Refine](https://refine.dev/)
+* **UI Library:** [Ant Design](https://ant.design/)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **Backend:** [Supabase](https://supabase.com/) (Database & Auth)
+
+## 🚀 Getting Started
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/USERNAME_ANDA/admin-portfolio-gigih.git](https://github.com/USERNAME_ANDA/admin-portfolio-gigih.git)
+    cd admin-portfolio
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Setup Environment Variables:**
+    Create a `.env` file in the root directory:
+    ```env
+    VITE_SUPABASE_URL=your_supabase_url
+    VITE_SUPABASE_KEY=your_supabase_anon_key
+    ```
+
+4.  **Run the development server:**
+    ```bash
     npm run dev
-```
+    ```
 
-### Building for production.
+5.  Open [http://localhost:5173](http://localhost:5173) (or the port shown in terminal).
 
-```bash
-    npm run build
-```
+## 📄 Database Schema (Supabase)
 
-### Running the production server.
+This app connects to the following tables:
+* `projects` (id, title, slug, thumbnail, gallery, ...)
+* `experiences` (id, company, role, start_date, is_current, ...)
+* `skills` (id, name, category)
+* `educations`
+* `achievements`
 
-```bash
-    npm run start
-```
-
-## Learn More
-
-To learn more about **Refine**, please check out the [Documentation](https://refine.dev/docs)
-
-- **Supabase Data Provider** [Docs](https://refine.dev/docs/core/providers/data-provider/#overview)
-- **Ant Design** [Docs](https://refine.dev/docs/ui-frameworks/antd/tutorial/)
-- **React Router** [Docs](https://refine.dev/docs/core/providers/router-provider/)
-
-## License
-
-MIT
+---
+*Built with ❤️ by Gigih Agung Prasetyo*
